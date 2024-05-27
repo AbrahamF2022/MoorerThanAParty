@@ -1,195 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Show Stoppers Academy</title>
-        <!-- Favicon-->
-       <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-       <link href="css/styles.css" rel="stylesheet" />
-    </head>
-<style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333; /* Adjust text color */
-        }
-      section {
-            background-image: url('red-shades-1418760164pPT.jpg');
-            background-size: cover; /* Adjust to your needs */
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Moorer Than A Party</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        section {
+            background-image: url('design_05.jpg');
+            background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            color: white; /* Set text color to contrast with the background */
-            padding: 100px 0; /* Adjust padding as needed */
+            color: white;
+            padding: 100px 0;
         }
-
+        .about-text {
+            font-size: 30px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 50px 0;
+        }
+        .gallery img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin: 20px;
+        }
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .about-text {
+                font-size: 20px;
+            }
+            .gallery img {
+                width: 100%;
+                height: auto;
+                margin: 10px 0;
+            }
+        }
     </style>
-
-<body class="d-flex flex-column bg-black">
-
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-                   <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+</head>
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
             <div class="container px-5">
-                <a class="navbar-brand fw-bolder" href="index.html">Show Stoppers Academy</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <a class="navbar-brand text-gold" href="index.html"><b>Moorer Than A Party</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item fw-bolder"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item fw-bolder"><a class="nav-link" href="about.html">About Us</a></li> 
-                        <li class="nav-item fw-bolder"><a class="nav-link" href="pricing.html">Donate</a></li>
-                        <li class="nav-item fw-bolder"><a class="nav-link" href="faq.html">Events</a></li> 
-                          <li class="nav-item fw-bolder"><a class="nav-link" href="portfolio-item.html">Gallery</a></li> 
-                         <!--<li class="nav-item fw-bolder"><a class="nav-link" href="contact.html">Register</a></li> -->
-                       
-                                 <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle fw-bolder" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item fw-bolder"  href="blog-home.html">Balling At Fordham</a></li> 
-                                    <li><a class="dropdown-item fw-bolder" href="blog-post.html">Spring Break Shootout</a></li>
-                                     <li><a class="dropdown-item fw-bolder" href="contact.html">Fundraising Gala Ticket Purchase</a></li>
-                                     <li><a class="dropdown-item fw-bolder" href="portfolio-overview.html">Fundraising Gala Donation</a></li>
-                                </ul>
-                            </li> 
-                            
-                    </ul>
+                        <li class="nav-item fw-bold"><a class="text-gold nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item fw-bold"><a class="nav-link" href="contact.html">Schedule Event</a></li>
+                        <li class="nav-item fw-bold"><a class="nav-link" href="pricing.html">Services</a></li>
+                        <li class="nav-item fw-bold"><a class="nav-link" href="faq.html">Testimonials</a></li>
+                        <li class="nav-item fw-bold"><a class="nav-link" href="portfolio-item.html">Gallery</a></li>
+                    </ul>      
                 </div>
             </div>
         </nav>
-            <!-- Header-->
-     <section class="bg-silver py-5">
+        <!-- Header-->
+        <section class="bg-silver py-5">
             <div class="container px-5 my-5 text-center">
-                <h2 class="display-4 fw-bolder text-white mb-3" style="font-size: 50px;">Our Mission</h2>
-                <p class="lead text-white mb-4" style="font-size: 20px;">Help us expand our outreach!</p>
+                <h2 class="display-4 fw-bolder text-gold mb-3" style="font-size: 70px;"><b>Our Story</b></h2>
             </div>
         </section>
-            <header class=" py-5"> <!-- Change the background color to a light background -->
-             
         <div class="container px-4">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
-                <div class="text-center my-5">
-                   
-             
-                     <img src="SSAMISSION.png" alt="Your Image" style="max-width: 60%;" />
-                    <div class="border p-4" style="border-width: 10px;">
-                        <p class="lead text-white mb-4" style="font-size: 20px;">Show Stoppers Academy (“SSA”) is a community-based group that will provide a “Safe Haven” for our youth's future leaders. A place where the youth from all walks of life can build confidence, strength, and camaraderie through sports and education.</p>
-                        <p class="lead text-white mb-4" style="font-size: 20px;">We currently live in a day and age where social acceptance supersedes humanity. At SSA, we provide our children with a safe space to be themselves, encourage them to have respect for their peers and elders, and create a space to develop into productive individuals. This is all accomplished through education in financial literacy, health and wellness, and various travel opportunities through sports.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="text-center my-5">
+                        <p class="lead text-black mb-4 about-text"><b>My name is Vashanna Moorer, Owner and Premium Event and Balloon Designer. Planning events was a hobby for years doing parties for family, and friends and even planning my own wedding that has now turned into my dream business.  Making people’s dreams and visions come to life, and seeing their smiles and joy means the world to me! We need more joy, happy moments, and celebrations of life in the world, especially during these difficult times! I am honored and grateful to be able to be a part of people’s beautiful moments!</b></p>
+                        <p class="lead text-black mb-4 about-text"><b>I started the business originally in 2007, this journey has not come without hardship and I had to close in 2010 after the recession. But the desire to create beautiful events and a full-service event facility in the community I grew up in and to create generational wealth pushed me to reopen the business in 2019. As fate would have it COVID hit and we had to shut down temporarily with the rest of the world. In 2021 with no customers or revenue, I was faced with the decision to close permanently.</b></p>
+                        <p class="lead text-black mb-4 about-text"><b>I had a dream which I now call “The God Dream” the purpose God has for my life after hearing the phrase at a high school graduation ceremony. It’s an impossible and crazy dream until it happens, nothing is impossible with God! I got a word from God and held onto it because feelings don't succeed TRUTH does. Now here I am in 2022, continuing to work towards my mission and grow!</b></p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-
-
-
-             <!--<header class="py-5">
-                <div class="container px-5">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12 col-xxl-6">
-                            <div class="text-center my-5">
-                                <h1 class="fw-bolder mb-3">Mission Statement</h1>
-                                <p class="lead fw-normal text-muted mb-4">Start Show Stoppers Academy (“SSA”) is a community based group that will provide a “Safe Haven” for our youths future leaders. A place where the youth from all walks of life can build confidence, strength and comradery through sports and education.
-
-We currently live in a day and age where social acceptance, supersedes humanity.  At SSA, we provide our children with a safe space to be themselves, encourage them to have respect for their peers and elders, and create a space to develop into productive individuals. This is all accomplished through education in financial literacy, health and wellness and various travel opportunities through sports.</p>
-                                
-                            </div>
-                        </div>
-                    </div>
+        <div class="gallery">
+            <img src="certificaion.png" alt="Certification">
+            <img src="certification2.png" alt="Certification">
+        </div>
+    </main>
+    <footer class="bg-black py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-gold">Copyright &copy; Moorer Than A Party</div>
                 </div>
-            </header>
-            <!-- About section one-->
-           <!-- <a class="btn btn-primary btn-lg" href="#scroll-target">Read our story</a>
-            <section class="py-5 bg-light" id="scroll-target">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-                        <div class="col-lg-6">
-                            <h2 class="fw-bolder">Our founding</h2>
-                            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About section two-->
-        <!--   <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="https://dummyimage.com/600x400/343a40/6c757d" alt="..." /></div>
-                        <div class="col-lg-6">
-                            <h2 class="fw-bolder">Growth &amp; beyond</h2>
-                            <p class="lead fw-normal text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est, ut esse a labore aliquam beatae expedita. Blanditiis impedit numquam libero molestiae et fugit cupiditate, quibusdam expedita, maiores eaque quisquam.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Team members section-->
-           <!-- <section class="py-5 bg-light">
-                <div class="container px-5 my-5">
-                    <div class="text-center">
-                        <h2 class="fw-bolder">Our team</h2>
-                        <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>
-                    </div>
-                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5 mb-5 mb-xl-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Ibbie Eckart</h5>
-                                <div class="fst-italic text-muted">Founder &amp; CEO</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-xl-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Arden Vasek</h5>
-                                <div class="fst-italic text-muted">CFO</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5 mb-5 mb-sm-0">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Toribio Nerthus</h5>
-                                <div class="fst-italic text-muted">Operations Manager</div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="text-center">
-                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
-                                <h5 class="fw-bolder">Malvina Cilla</h5>
-                                <div class="fst-italic text-muted">CTO</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-       <footer class="bg-black py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Show Stoppers Academy</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
+                <div class="col-auto">
+                    <p class="text-gold">Made by Techy.Develops</p>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-      <script src="js/scripts.js"></script>
-    </body>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 </html>
